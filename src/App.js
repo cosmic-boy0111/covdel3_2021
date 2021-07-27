@@ -11,17 +11,20 @@ import second from './second';
 
 function App() {
   return (
-    <Router>
-    <Switch>
+    // <Router>
+    // <Switch>
 
-          <Route exact path='/'>
-            <first/>
-          </Route>
-          <Route exact path="/second">
-            <second/>
-          </Route>
-        </Switch>
-    </Router>
+    //       <Route exact path='/'>
+    //         <first/>
+    //       </Route>
+    //       <Route exact path="/second">
+    //         <second/>
+    //       </Route>
+    //     </Switch>
+    // </Router>
+    <>  
+      hello
+    </>
   );
 }
 
