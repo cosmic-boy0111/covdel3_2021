@@ -1,17 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom"; 
+import first from './first';
+import second from './second';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-          change site
-      </header>
-    </div>
+    <Router>
+    <Switch>
+
+          <Route exact path='/'>
+            <first/>
+          </Route>
+          <Route exact path="/second">
+            <second/>
+          </Route>
+        </Switch>
+    </Router>
   );
 }
 
